@@ -25,5 +25,6 @@ jobs:
     - run: wodby ci run -i wodby/node -- npm run export
     
     - run: wodby ci build nginx
+    - run: wodby ci build nginx --from out
     - run: wodby ci release
     - run: wodby ci deploy
